@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Sólidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Calculadora de Sólidos</h1>
+  </header>
+  <main>
+    <div class="container">
+      <label for="solido">Escolha o sólido:</label>
+      <select id="solido" onchange="mostrarCampos()">
+        <option value="">--Selecione--</option>
+        <option value="cubo">Cubo</option>
+        <option value="paralelepipedo">Paralelepípedo</option>
+        <option value="esfera">Esfera</option>
+        <option value="cilindro">Cilindro</option>
+        <option value="cone">Cone</option>
+      </select>
+
+      <div id="inputs"></div>
+
+      <button onclick="calcular()">Calcular</button>
+
+      <div id="resultado"></div>
+    </div>
+  </main>
+  <footer> BY DANIEL, GUILHERME E MAYARA <br> 2°B</footer>
+
+  <script src="script.js"> </script>
+</body>
+</html>
